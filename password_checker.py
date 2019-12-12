@@ -1,5 +1,6 @@
-import re
+# Define special symbols
 special_symbols = ["!", "@", "#", "$", "%", "^", "&", "*"]
+
 def password_is_valid(password):
     if password != "":
         #password length
