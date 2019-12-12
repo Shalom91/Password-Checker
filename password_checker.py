@@ -33,7 +33,7 @@ print(password_is_valid("111111111q1!S"))
 #======================================= Password_is_ok ==============================================
 def password_is_ok(password):
     count = 0
-
+# set conditions for the password
     if password != "":
         if len(password) > 8:
             if (any(i.islower() for i in password) or any(i.isupper() 
@@ -46,8 +46,7 @@ def password_is_ok(password):
             raise Exception("Password is not OK if its less than 8 characters")
     else:
         raise Exception("Password is not OK if it is empty")
-            
-        
+# when condtions are met, return true               
     if count == 1:
         return True
    
