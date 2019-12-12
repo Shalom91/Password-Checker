@@ -1,6 +1,7 @@
 from password_checker import password_is_valid, password_is_ok
 import pytest
 
+# Testing for each condition of password_is_valid
 def test_password_is_valid():
     with pytest.raises(Exception) as e:
         assert password_is_valid("")
@@ -15,7 +16,7 @@ def test_password_is_valid():
         
     assert password_is_valid("Molash@91") == True
 #======================================= password_is_ok ==============================================
-
+# # Testing for each condition of password_is_ok
 def test_password_is_ok():
     with pytest.raises(Exception):
         assert password_is_ok("") == Exception("Password is not OK if it is empty")
