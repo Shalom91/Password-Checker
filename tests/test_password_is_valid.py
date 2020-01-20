@@ -1,4 +1,4 @@
-from password_checker import password_is_valid
+from password_checker.password_checker import password_is_valid
 import pytest
 
 # Testing for each condition of password_is_valid
