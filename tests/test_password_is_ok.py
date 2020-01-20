@@ -1,4 +1,4 @@
-from password_checker import password_is_ok
+from password_checker.password_checker import password_is_ok
 import pytest
 
 def test_password_is_ok():
